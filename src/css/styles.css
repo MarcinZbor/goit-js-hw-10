@@ -7,9 +7,19 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background: linear-gradient(54deg, #1301fe 0, #51caf6 42%);
   color: #212121;
   line-height: 1.5;
+}
+
+.wrapper {
+  width: 1000px;
+  height: 500px;
+  margin: 100px auto;
+  background-color: rgba(42, 69, 152, 0.8);
+  padding: 40px 60px;
+  border: 2px solid rgb(2, 2, 2);
+  border-radius: 25px;
 }
 
 #search-box {
@@ -17,4 +27,8 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+
+input {
+  width: 100%;
 }
