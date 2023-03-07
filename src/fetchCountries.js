@@ -1,9 +1,8 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-export { fetchCountries };
 
 const URL = 'https://restcountries.com/#api-endpoints-v3-name';
 
-function fetchCountries(name) {
+export function fetchCountries(name) {
   return fetch(
     `${URL}/${name}?fields=name,capital,population,flags,languages`
   ).then(response => {
@@ -13,3 +12,4 @@ function fetchCountries(name) {
     return response.json();
   });
 }
+
