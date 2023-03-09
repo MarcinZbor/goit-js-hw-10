@@ -28,10 +28,10 @@ function onInputWrite(e) {
       }
       if (r.length === 1) {
         listEl.innerHTML = '';
-        return (blockEl.innerHTML = onRenderCountryCard(r));
+        return blockEl.insertAdjacentHTML('beforeend', onRenderCountryCard(r));
       }
       blockEl.innerHTML = '';
-      listEl.innerHTML = onRenderList(r);
+      listEl.insertAdjacentHTML('beforeend', onRenderList(r));
     })
     .catch(error => {
       blockEl.innerHTML = '';
