@@ -16,6 +16,9 @@ function onInputWrite(e) {
   if (!nameOfCountry) {
     return;
   }
+  if (e.target.value === '') {
+    nameOfCountry.textContent = '';
+  }
 
   fetchCountries(nameOfCountry)
     .then(r => {
